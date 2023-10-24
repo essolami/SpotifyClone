@@ -1,0 +1,123 @@
+@import "../../theme/base/variables.scss";
+
+
+.menu_fonts{
+    box-sizing: border-box;
+    font-family: spotify_font, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+.navbar_wrapper{
+    width: $nav-bar-width;
+    height: 85vh;
+    background-color: $main-color;
+    padding-top: 24px;
+    position: relative;
+    .logo{
+        padding: 0 24px;
+        margin-bottom: 18px;
+    }
+    .spotifyIcon{
+        width: 129px;
+    }
+    .icons_list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
+        li {
+            padding: 0 8px;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                height: 40px;
+                padding: 0 16px;
+                cursor: pointer;
+                .icon{
+                    fill:#b3b3b3;
+                }
+                .current{
+                    color: #fff;
+                    fill: #fff; 
+                }
+                &:hover{
+                    span{
+                        color: #fff;
+                    }
+                    svg{
+                        fill: #fff;
+                    }
+                }
+                
+            }
+            .current_item{
+                span{
+                    color: #fff;
+                }
+                svg{
+                    fill:#fff
+                }
+            }
+        }
+    }
+
+    .menu_container{
+        margin-top: 24px;
+        .container_action{
+            padding: 8px 24px 8px 24px;
+            opacity: .7;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .container_icon{
+                width: 24px;
+                height: 24px;
+                margin-right: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .add__playlist{
+                background: #fff;
+            }
+            .liked__playlist{
+                background: linear-gradient(135deg,#450af5,#c4efd9);
+            }
+            &:hover{
+                opacity: 1;
+                .container_icon{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .menu_separator{
+        background-color: #282828;
+        border: none;
+        height: 1px;
+        margin: 8px 24px 0 24px;
+        min-height: 1px;
+    }
+    .app_install{
+        padding: 0 8px;
+        position: absolute;
+        bottom: 0;
+        .app_install_link{
+            padding-right: 20px;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            gap: 16px;
+            height: 40px;
+            padding: 0 16px;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}

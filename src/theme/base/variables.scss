@@ -1,0 +1,22 @@
+$color-dark-gray: #333;
+$color-white: #eee;
+$nav-bar-width: 232px;
+$main-color:rgb(20, 20, 20);
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     background: #f1f1f1; 
+//   }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(71, 71, 71); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(92, 91, 91); 
+  }
