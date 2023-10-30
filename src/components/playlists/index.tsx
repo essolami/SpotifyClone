@@ -1,6 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./styles.scss";
-class Playlists extends Component {
+
+type PlaylistProps = {
+  title: string;
+};
+
+class Playlists extends React.Component<PlaylistProps> {
   render() {
     return (
       <>

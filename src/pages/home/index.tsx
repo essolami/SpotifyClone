@@ -1,8 +1,6 @@
 import loadable from "@loadable/component";
 import { ErrorBoundary } from "../../components";
-const Home = loadable(() => import("./home"), {
-  fallback: null,
-});
+const Home = loadable(() => import("./home"));
 
 const HomeBoundary = (props) => (
   <ErrorBoundary>

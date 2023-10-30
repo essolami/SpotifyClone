@@ -1,5 +1,5 @@
 import { Component } from "react";
-import style from "./style.scss";
+import style from "./styles.module.scss";
 
 class Loading extends Component {
   componentDidMount() {

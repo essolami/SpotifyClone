@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import styles from "./styles.module.scss";
 
-const NotFound = ({ staticContext }) => {
+const NotFound = ({ staticContext }: { staticContext: object }) => {
   // We have to check if staticContext exists
   // because it will be undefined if rendered through a BrowserRoute
   /* istanbul ignore next */
