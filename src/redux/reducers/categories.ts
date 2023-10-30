@@ -1,5 +1,3 @@
-import { Action } from "../../types/global";
-
 const initialState = {
   readyStatus: "CATEGORIES_INVALID",
   err: null,

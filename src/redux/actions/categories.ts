@@ -1,7 +1,5 @@
 // import axios from 'axios';
 
-import { Dispatch, ThunkAction } from "../../types/global";
-
 export const fetchCategories = (): ThunkAction => {
   return async (dispatch: Dispatch) => {
     dispatch({
