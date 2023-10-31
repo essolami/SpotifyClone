@@ -10,13 +10,6 @@ import "./styles.scss";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Switch>
-          {routes.map((route, i) => (
-            <Route key={i} {...route} />
-          ))}
-        </Switch>
-      </BrowserRouter>
       {/* <Helmet {...config.APP} />
       <div className="side_bar">
         <SideBar />

@@ -1,17 +1,18 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { fetchCategories } from "../../redux/actions/categories";
 import { useDispatch } from "react-redux";
 
-export type Props = {
-  fetchCategories: () => ThunkAction;
-};
+function About() {
+  // Get the dispatch function
+  const dispatch: Dispatch = useDispatch();
 
-function About(props: Props) {
-  const dispatch = useDispatch();
+  // Use the useEffect hook to fetch categories when the component mounts
   useEffect(() => {
+    // Dispatch the fetchCategories action
     dispatch(fetchCategories());
-  }, [props, dispatch]);
+  }, [dispatch]);
 
   return <div>We are in About Page</div>;
 }
+
 export default About;
