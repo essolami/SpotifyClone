@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.scss";
 
-type PlaylistProps = {
+type Props = {
   title: string;
 };
 
-class Playlists extends React.Component<PlaylistProps> {
+class Playlists extends React.Component<Props> {
   render() {
     return (
       <>

@@ -2,11 +2,17 @@ import { RouteComponentProps } from "react-router-dom";
 import type { Reducers } from "../redux/reducers";
 
 declare global {
-  export interface ICommonProps<P = AnyObject>
-    extends RouteComponentProps<P>,
+  export interface ICommonProps<
+    P extends { [K in keyof P]?: string | undefined } = AnyObject
+  > extends RouteComponentProps<P>,
       AnyObject {
     [key: string]: any;
   }
+
+  export interface IAnyProps {
+    [key: string]: any;
+  }
+
   type AnyObject<T = any> = Record<string, T>;
 
   // State

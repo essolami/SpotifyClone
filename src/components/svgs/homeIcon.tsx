@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { SvgProps } from "../../types/svg";
+import { SvgProps } from "../../types/common";
 
 class HomeIcon extends Component<SvgProps> {
   render() {

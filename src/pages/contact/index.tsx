@@ -6,7 +6,7 @@ const Contact = loadable(() => import("./contact"), {
   fallback: <Loading />,
 });
 
-const ContactBoundaries = (props) => (
+const ContactBoundaries: React.FC<IAnyProps> = (props) => (
   <ErrorBoundary>
     <Contact {...props} />
   </ErrorBoundary>

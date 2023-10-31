@@ -1,5 +1,3 @@
-import * as categoriesAction from './categories';
+import * as categoriesAction from "./categories";
 
-export {
-    categoriesAction
-}
+export { categoriesAction };

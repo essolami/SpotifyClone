@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { SvgProps } from "../../types/svg";
+import React from "react";
+import { SvgProps } from "../../types/common";
 
-class SpotifyIcon extends Component<SvgProps> {
+class SpotifyIcon extends React.Component<SvgProps> {
   render() {
     return (
       <svg viewBox="0 0 1134 340" className={this.props.className}>

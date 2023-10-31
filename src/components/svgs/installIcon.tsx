@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { SvgProps } from "../../types/common";
 
-class InstallIcon extends Component {
+class InstallIcon extends Component<SvgProps> {
   render() {
     return (
       <svg

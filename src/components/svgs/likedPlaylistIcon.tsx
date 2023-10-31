@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { SvgProps } from "../../types/common";
 
-class LikedPlaylistIcon extends Component {
+class LikedPlaylistIcon extends Component<SvgProps> {
   render() {
     return (
       <svg

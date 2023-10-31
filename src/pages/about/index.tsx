@@ -1,12 +1,10 @@
 import loadable from "@loadable/component";
 import { ErrorBoundary } from "../../components";
-import { Loading } from "../../components";
+import { Props } from "./about";
 
-const About = loadable(() => import("./about"), {
-  fallback: <Loading />,
-});
+const About = loadable(() => import("./about"));
 
-const AboutBoundary = (props) => (
+const AboutBoundary: React.FC<Props> = (props) => (
   <ErrorBoundary>
     <About {...props} />
   </ErrorBoundary>

@@ -1,8 +1,8 @@
 import React from "react";
-// import routes from "../routes";
+import routes from "../routes";
 // import { Helmet } from "react-helmet";
 // import { SideBar, Player, Header } from "../components";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import config from "../config";
 
 import "../theme/styles.scss";
@@ -10,6 +10,13 @@ import "./styles.scss";
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+        <Switch>
+          {routes.map((route, i) => (
+            <Route key={i} {...route} />
+          ))}
+        </Switch>
+      </BrowserRouter>
       {/* <Helmet {...config.APP} />
       <div className="side_bar">
         <SideBar />
