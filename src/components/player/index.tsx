@@ -1,37 +1,38 @@
 import React, { Component } from "react";
 import { HeartIcon, CastIcon } from "..";
 import PlayerControl from "./player_control";
-import "./styles.scss";
+import styles from "./styles.module.scss";
+
 class Player extends Component {
   render() {
     return (
-      <div className="playlist_container">
-        <div className="flexbox_container">
-          <div className="info_container">
-            <div className="music_img">
+      <div className={styles.playlistContainer}>
+        <div className={styles.flexboxContainer}>
+          <div className={styles.infoContainer}>
+            <div className={styles.musicImg}>
               <img
                 src="https://i.scdn.co/image/ab67616d0000485114fc1d5b10e9cb20f33e0f74"
                 alt=""
-                className="cover-art-image"
+                className={styles.coverArtImage}
               />
             </div>
-            <div className="music_info">
+            <div className={styles.musicInfo}>
               <span>
-                <a href="/" className="track_name">
+                <a href="/" className={styles.trackName}>
                   Le monde par ma fenetre
                 </a>
               </span>
               <span>
-                <a href="/" className="track_artist">
+                <a href="/" className={styles.trackArtist}>
                   Draganov
                 </a>
               </span>
             </div>
-            <div className="button_icon">
-              <button type="button" className="control-button">
+            <div className={styles.buttonIcon}>
+              <button type="button" className={styles.controlButton}>
                 <HeartIcon />
               </button>
-              <button type="button" className="control-button">
+              <button type="button" className={styles.controlButton}>
                 <CastIcon />
               </button>
             </div>
@@ -39,7 +40,7 @@ class Player extends Component {
           <>
             <PlayerControl />
           </>
-          <div className="track_opt"></div>
+          <div className={styles.trackOpt}></div>
         </div>
       </div>
     );
