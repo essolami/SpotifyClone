@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Helmet } from "react-helmet";
 
-import styles from "./styles.module.scss";
+import "./styles.scss";
 
 type StaticContext = {
   statusCode: number;
@@ -18,7 +18,7 @@ const NoteFound: React.FC<Props> = ({ staticContext }) => {
   if (staticContext) staticContext.statusCode = 404;
 
   return (
-    <div className={styles.NotFound}>
+    <div className='NotFound'>
       <Helmet title="Oops" />
       <p>Oops, Page was not found!</p>
     </div>

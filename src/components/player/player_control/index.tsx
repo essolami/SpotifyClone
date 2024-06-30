@@ -6,40 +6,40 @@ import {
   NextIcon,
   RepeatIcon,
 } from "../..";
-import styles from "./styles.module.scss";
+import "../styles.scss";
 
 class PlayerControl extends Component {
   render() {
     return (
       <>
-        <div className={styles.playerControl}>
-          <div className={styles.playerControlButton}>
-            <div className={styles.playerControlLeft}>
-              <button type="button" className={styles.controlButton}>
+        <div className='playerControl'>
+          <div className='playerControlButton'>
+            <div className='playerControlLeft'>
+              <button type="button" className='controlButton'>
                 <ShuffleIcon />
               </button>
-              <button type="button" className={styles.controlButton}>
+              <button type="button" className='controlButton'>
                 <PreviousIcon />
               </button>
             </div>
-            <div className={styles.playerControlPlay}>
+            <div className='playerControlPlay'>
               <button
                 type="button"
-                className={`${styles.controlButton} ${styles.play}`}
+                className={`$'controlButton} $'play}`}
               >
                 <PlayIcon />
               </button>
             </div>
-            <div className={styles.playerControlRight}>
-              <button type="button" className={styles.controlButton}>
+            <div className='playerControlRight'>
+              <button type="button" className='controlButton'>
                 <NextIcon />
               </button>
-              <button type="button" className={styles.controlButton}>
+              <button type="button" className='controlButton'>
                 <RepeatIcon />
               </button>
             </div>
           </div>
-          <div className={styles.playbackBar}></div>
+          <div className='playbackBar'></div>
         </div>
       </>
     );

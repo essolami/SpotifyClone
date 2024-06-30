@@ -1,38 +1,38 @@
 import React, { Component } from "react";
 import { HeartIcon, CastIcon } from "..";
 import PlayerControl from "./player_control";
-import styles from "./styles.module.scss";
+import "./styles.scss";
 
 class Player extends Component {
   render() {
     return (
-      <div className={styles.playlistContainer}>
-        <div className={styles.flexboxContainer}>
-          <div className={styles.infoContainer}>
-            <div className={styles.musicImg}>
+      <div className='playlistContainer'>
+        <div className='flexboxContainer'>
+          <div className='infoContainer'>
+            <div className='musicImg'>
               <img
                 src="https://i.scdn.co/image/ab67616d0000485114fc1d5b10e9cb20f33e0f74"
                 alt=""
-                className={styles.coverArtImage}
+                className='coverArtImage'
               />
             </div>
-            <div className={styles.musicInfo}>
+            <div className='musicInfo'>
               <span>
-                <a href="/" className={styles.trackName}>
+                <a href="/" className='trackName'>
                   Le monde par ma fenetre
                 </a>
               </span>
               <span>
-                <a href="/" className={styles.trackArtist}>
+                <a href="/" className='trackArtist'>
                   Draganov
                 </a>
               </span>
             </div>
-            <div className={styles.buttonIcon}>
-              <button type="button" className={styles.controlButton}>
+            <div className='buttonIcon'>
+              <button type="button" className='controlButton'>
                 <HeartIcon />
               </button>
-              <button type="button" className={styles.controlButton}>
+              <button type="button" className='controlButton'>
                 <CastIcon />
               </button>
             </div>
@@ -40,7 +40,7 @@ class Player extends Component {
           <>
             <PlayerControl />
           </>
-          <div className={styles.trackOpt}></div>
+          <div className='trackOpt'></div>
         </div>
       </div>
     );
